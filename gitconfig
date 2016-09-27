@@ -1,0 +1,34 @@
+[user]
+	name = mykhaly
+	email = yurkamykhalchuk@gmail.com
+[alias]
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	co = checkout
+	st = status
+#	ci = commit
+	br = branch
+	stat = diff --stat
+	staged = diff --staged
+	stagedstat = diff --staged --stat
+   	find = log --pretty=\"format:%Cgreen%H %Cblue%s\" --name-status --grep
+[push]
+	default = simple
+[core]
+	editor = vim
+[gui]
+        warndetachedcommit = true
+[diff]
+
+    compactionHeuristic = true
+
+[interactive]
+
+    diffFilter = diff-highlight
+
+[pager]
+
+    log = diff-highlight | less
+
+    show = diff-highlight | less
+
+    diff = diff-highlight | less
